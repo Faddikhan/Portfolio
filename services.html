@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* services section */
+        body{
+            background: rgba(241, 241, 241);
+        }
+        
+        
+        
+        
+        .services {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            ;
+
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+
+
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 340px;
+            height: 415px;
+            border: 2px solid black;
+            margin: 10px;
+            align-items: center;
+            text-align: justify;
+            padding: 10px;
+            border-radius: 15px;
+            background: linear-gradient(to top, rgb(255, 45, 45)50%, rgb(255, 255, 255) 50%);
+            background-size: 100% 200%;
+            transition: all .8s;
+            
+
+        }
+
+        .box:hover {
+            background-position: left bottom;
+            color: white;
+            border: none;
+            box-shadow: 0 0 20px rgb(255, 45, 25);
+        }
+
+        .box img {
+            width: 80px;
+            height: 80px;
+
+        }
+
+        .services .heading span {
+            color: orangered;
+        }
+
+        .services h1 {
+            font-size: 46px;
+            text-align: center;
+        }
+
+        /* services code end */
+
+        /* footer code */
+        .footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: white;
+    border: 2px solid orangered;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color: orangered;
+    border: 2px solid orangered;
+
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+
+}
+
+.footer ul li a:hover{
+    border-bottom: 3px solid orangered;
+
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copy-right{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+    <!-- services section -->
+    <section class="services">
+        <h1 class="heading">Serv<span>ices</span></h1>
+        <div class="row">
+            <div class="box">
+                <img src="image folder/images.jpg" alt="">
+                <h1 class="heading">Website Design</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum saepe quaerat maiores dolor velit
+                    ullam voluptatem aliquid dolore ipsam, corrupti labore ipsa repellat repellendus voluptatum!</p>
+            </div>
+
+            <div class="box">
+                <img src="image folder/website.png" alt="">
+                <h1 class="heading">UX / UI <br> Design</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum saepe quaerat maiores dolor velit
+                    ullam voluptatem aliquid dolore ipsam, corrupti labore ipsa repellat repellendus voluptatum!</p>
+            </div>
+
+            <div class="box">
+                <img src="image folder/marketing.jpg" alt="">
+                <h1 class="heading">Digital Marketing</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum saepe quaerat maiores dolor velit
+                    ullam voluptatem aliquid dolore ipsam, corrupti labore ipsa repellat repellendus voluptatum!</p>
+            </div>
+        </div>
+            <br>
+            <br>
+
+
+
+        <div class="row">
+            <div class="box">
+                <img src="image folder/images.jpg" alt="">
+                <h1 class="heading">Website Design</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum saepe quaerat maiores dolor velit
+                    ullam voluptatem aliquid dolore ipsam, corrupti labore ipsa repellat repellendus voluptatum!</p>
+            </div>
+
+            <div class="box">
+                <img src="image folder/website.png" alt="">
+                <h1 class="heading">UX / UI <br> Design</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum saepe quaerat maiores dolor velit
+                    ullam voluptatem aliquid dolore ipsam, corrupti labore ipsa repellat repellendus voluptatum!</p>
+            </div>
+
+            <div class="box">
+                <img src="image folder/marketing.jpg" alt="">
+                <h1 class="heading">Digital Marketing</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum saepe quaerat maiores dolor velit
+                    ullam voluptatem aliquid dolore ipsam, corrupti labore ipsa repellat repellendus voluptatum!</p>
+            </div>
+        </div>
+    </section>
+    <!-- services section end -->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+
+            <li>
+                <a href="#">Sevices</a>
+            </li>
+
+            <li>
+                <a href="#">About Me</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copy-right">@ 2024 Fawad | All rights reserved</p>
+    </footer>
+</body>
+
+</html>
